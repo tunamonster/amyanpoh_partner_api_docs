@@ -10,7 +10,9 @@ The best way to handle exceptions is to use the response code in the response he
 ## Paths
 ### Pricing
 Returns pricing for a given item based on the rates from the contract or SLA.
+
 **URI:** /packages/pricing
+
 **method:** POST
 
 **Body params:**
@@ -25,7 +27,9 @@ Param | Datatype | Description
 
 ### Get Packages
 Read data about your existing packages from the Amyanpoh database.
+
 **URI:** /packages
+
 **method:** GET
 
 **Query params:**
@@ -44,7 +48,9 @@ Example query: ` api.amyanpoh.com/v1/packages?start_date=1501029572&end_date=150
 
 ### Make Package
 Creates a single package object in the Amyanpoh database under your account.
+
 **URI:** /packages
+
 **method:** POST
 
 **Body params**:
