@@ -4,8 +4,8 @@ The Amyanpoh API lets partners integrate and interact with our delivery life pro
 All URIs below are relative to https://api.amyanpoh.com/v1/
 
 ## General
-All access requires an api token. You can specify this in as an 'x-api-key' field in your request header.
-The best way to handle exceptions is to use the response code in the response header. Succesfully executed queries always return a HTTP code of 200.
+All access requires an api token. You can provide this as an 'x-api-key' field in your request header.
+The best way to handle exceptions is to use the status code in the response header. Succesful queries always return a HTTP code of 200.
 
 ## Paths
 ### Pricing
