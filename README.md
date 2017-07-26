@@ -66,3 +66,7 @@ param | datatype | description
 Param | Datatype | Description
 --- | --- | ---
 'payment_method' | string | Defaults to 'Cash on Delivery'
+'description' | string | Description visible to the end customer if customer tracking is activated
+'latitude' | float | Coordinate of the destination
+'longitude' | float | Coordinate of the destination
+'region' | string | Defaults to 'ygn'. Options are ['ygn', 'mdy', 'npd', 'other']
