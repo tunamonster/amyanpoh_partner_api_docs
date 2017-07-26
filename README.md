@@ -1,6 +1,6 @@
 # Amyanpoh API Documentation
 
-The Amyanpoh API lets partners integrate and interact with our delivery life programmatically. 
+The Amyanpoh API lets partners integrate and interact with our delivery processes programmatically. 
 All URIs below are relative to https://api.amyanpoh.com/v1/
 
 ## General
