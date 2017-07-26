@@ -63,7 +63,6 @@ param | datatype | description
 'longitude' | float | Coordinate of the destination
 'region' | string | Defaults to 'ygn'. Options are ['ygn', 'mdy', 'npd', 'other']
 	
-Markdown | Less | Pretty
+Param | Datatype | Description
 --- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+'payment_method' | string | Defaults to 'Cash on Delivery'
