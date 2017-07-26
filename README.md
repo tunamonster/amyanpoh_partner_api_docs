@@ -15,6 +15,7 @@ Returns pricing for a given item based on the rates from the contract or SLA.
 
 **Body params:**
 Required
+
 Param | Datatype | Description
 --- | --- | ---
 | 'weight' | int or float | in kilograms |
@@ -31,6 +32,7 @@ Read data about your existing packages from the Amyanpoh database.
 Performing this action without any filters will return your last 100 packages. The following filters are optional and can help you to search more specificly. The date filter currently only works if both start and end dates are present. The filters are applied in the order they are listed.
 
 Optional:
+
 Param | Datatype | Description
 --- | --- | ---
 | 'start_date' | int | Only show packages created after this [UNIX date](https://en.wikipedia.org/wiki/Unix_time) |
@@ -49,6 +51,7 @@ Creates a single package object in the Amyanpoh database under your account.
 There are several required parameters, and several optional parameters when creating a package. Optional parameters default to the most common choice.
 
 Required:
+
 Param | Datatype | Description
 --- | --- | ---
 |'name'	| string | The end customer's name |
