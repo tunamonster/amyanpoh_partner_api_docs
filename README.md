@@ -48,21 +48,16 @@ Creates a single package object in the Amyanpoh database under your account.
 **Body params**:
 There are several required parameters, and several optional parameters when creating a package. Optional parameters default to the most common choice.
 Required:
-| param | datatype | description |
-| ---- | ---- | ---- |
+
+Param | Datatype | Description
+--- | --- | ---
 |'name'	| string | The end customer's name |
 | 'address'	| string | The end customer's address |
 | 'phone' |string | Be careful not to pass ints starting with 0, as they can be read as octal digits |
 | 'cod'	| int |	The amount in kyats to be collected from the end customer on your behalf |
+
 Optional:
-param | datatype | description
---- | --- | ---
-'payment_method' | string | Defaults to 'Cash on Delivery'
-'description' | string | Description visible to the end customer if customer tracking is activated
-'latitude' | float | Coordinate of the destination
-'longitude' | float | Coordinate of the destination
-'region' | string | Defaults to 'ygn'. Options are ['ygn', 'mdy', 'npd', 'other']
-	
+
 Param | Datatype | Description
 --- | --- | ---
 'payment_method' | string | Defaults to 'Cash on Delivery'
