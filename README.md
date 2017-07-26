@@ -56,7 +56,7 @@ Required:
 | 'cod'	| int |	The amount in kyats to be collected from the end customer on your behalf |
 Optional:
 param | datatype | description
----- | ---- | ----
+--- | --- | ---
 'payment_method' | string | Defaults to 'Cash on Delivery'
 'description' | string | Description visible to the end customer if customer tracking is activated
 'latitude' | float | Coordinate of the destination
