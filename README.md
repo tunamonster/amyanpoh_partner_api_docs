@@ -14,14 +14,13 @@ Returns pricing for a given item based on the rates from the contract or SLA.
 **method:** POST
 
 **Body params:**
-	Required
-	| param | datatype | description |
-	| ---- | ---- | ---- |
-	| 'weight' | int or float | in kilograms |
-	|'size'| [ints or floats]|	[l, w, h], each in inches|
-	|'destination'|	string|	as a region suggested by the API response|
-	|'price'|	int or float|	in kyats. Used to determine the cash handling fee.|	
-	
+Required
+Param | Datatype | Description
+--- | --- | ---
+| 'weight' | int or float | in kilograms |
+|'size'| [ints or floats]|	[l, w, h], each in inches|
+|'destination'|	string|	as a region suggested by the API response|
+|'price'|	int or float|	in kyats. Used to determine the cash handling fee.|
 
 ### Get Packages
 Read data about your existing packages from the Amyanpoh database.
@@ -30,9 +29,10 @@ Read data about your existing packages from the Amyanpoh database.
 
 **Query params:**
 Performing this action without any filters will return your last 100 packages. The following filters are optional and can help you to search more specificly. The date filter currently only works if both start and end dates are present. The filters are applied in the order they are listed.
+
 Optional:
-| param | datatype | description |
-| ---- | ---- | ---- |
+Param | Datatype | Description
+--- | --- | ---
 | 'start_date' | int | Only show packages created after this [UNIX date](https://en.wikipedia.org/wiki/Unix_time) |
 | 'end_date' | int | Only show packages created before this date |
 | 'delivered' | string | If true, only shows delivered packages |
@@ -47,8 +47,8 @@ Creates a single package object in the Amyanpoh database under your account.
 
 **Body params**:
 There are several required parameters, and several optional parameters when creating a package. Optional parameters default to the most common choice.
-Required:
 
+Required:
 Param | Datatype | Description
 --- | --- | ---
 |'name'	| string | The end customer's name |
@@ -57,7 +57,6 @@ Param | Datatype | Description
 | 'cod'	| int |	The amount in kyats to be collected from the end customer on your behalf |
 
 Optional:
-
 Param | Datatype | Description
 --- | --- | ---
 'payment_method' | string | Defaults to 'Cash on Delivery'
