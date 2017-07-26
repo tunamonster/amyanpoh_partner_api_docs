@@ -57,6 +57,7 @@ Param | Datatype | Description
 | 'cod'	| int |	The amount in kyats to be collected from the end customer on your behalf |
 
 Optional:
+
 Param | Datatype | Description
 --- | --- | ---
 'payment_method' | string | Defaults to 'Cash on Delivery'
