@@ -25,7 +25,7 @@ Param | Datatype | Description
 |'name'	| string | The end customer's name |
 | 'address'	| string | The end customer's address |
 | 'phone' |string | Make sure this is a string, not an int |
-| 'cod'	| int |	The amount in kyats to be collected from the end customer on your behalf |
+| 'value'	| int |	The amount in kyats to be collected from the end customer on your behalf |
 | 'action_type'	| string ['delivery', 'pickup']| pass 'delivery' if we need to bring an item to the customer, and 'pickup' if we need to collect an item from the customer|
 
 Optional:
