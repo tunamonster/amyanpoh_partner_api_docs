@@ -1,7 +1,7 @@
 # Amyanpoh API Documentation
 
 The Amyanpoh API lets partners integrate and interact with our delivery processes programmatically. 
-All URIs below are relative to https://api.amyanpoh.com/v1/
+All URIs below are relative to https://app.amyanpoh.com/api/
 
 ## General
 All access requires an api token. You can provide this as an 'x-api-key' field in your request header.
@@ -11,7 +11,7 @@ The best way to handle exceptions is to use the status code in the response head
 ### Make a Package
 Creates a single package object in the Amyanpoh database under your account.
 
-**URI:** /packages
+**URI:** /make_package
 
 **method:** POST
 
@@ -32,6 +32,7 @@ Optional:
 
 Param | Datatype | Description
 --- | --- | ---
+'testing' | bool | Validates the input, but does not save it to the database if set to true.
 'payment_method' | string | Defaults to 'Cash on Delivery'
 'description' | string | Description visible to the end customer if customer tracking is activated
 'latitude' | float | Coordinate of the destination
