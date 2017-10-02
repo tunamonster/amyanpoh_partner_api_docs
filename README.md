@@ -8,6 +8,36 @@ All access requires an api token. You can provide this as an 'x-api-key' field i
 The best way to handle exceptions is to use the status code in the response header. Succesful requests always return a HTTP code of 200.
 
 ## Paths
+### Make a Package
+Creates a single package object in the Amyanpoh database under your account.
+
+**URI:** /packages
+
+**method:** POST
+
+**Body params**:
+There are several required parameters, and several optional parameters when creating a package. Optional parameters default to the most common choice.
+
+Required:
+
+Param | Datatype | Description
+--- | --- | ---
+|'name'	| string | The end customer's name |
+| 'address'	| string | The end customer's address |
+| 'phone' |string | Make sure this is a string, not an int |
+| 'cod'	| int |	The amount in kyats to be collected from the end customer on your behalf |
+| 'action_type'	| string ['delivery', 'pickup']| pass 'delivery' if we need to bring an item to the customer, and 'pickup' if we need to collect an item from the customer|
+
+Optional:
+
+Param | Datatype | Description
+--- | --- | ---
+'payment_method' | string | Defaults to 'Cash on Delivery'
+'description' | string | Description visible to the end customer if customer tracking is activated
+'latitude' | float | Coordinate of the destination
+'longitude' | float | Coordinate of the destination
+'region' | string | Defaults to 'ygn'. Options are ['ygn', 'mdy', 'npd', 'other']
+
 ### Pricing
 Returns pricing for a given item based on the rates from the contract or SLA.
 
@@ -46,32 +76,3 @@ Param | Datatype | Description
 | 'last' | int | Return the last n results. Max 400. |
 
 Example query: ` api.amyanpoh.com/v1/packages?start_date=1501029572&end_date=1501030747&last=6&delivered=true `
-
-### Make Package
-Creates a single package object in the Amyanpoh database under your account.
-
-**URI:** /packages
-
-**method:** POST
-
-**Body params**:
-There are several required parameters, and several optional parameters when creating a package. Optional parameters default to the most common choice.
-
-Required:
-
-Param | Datatype | Description
---- | --- | ---
-|'name'	| string | The end customer's name |
-| 'address'	| string | The end customer's address |
-| 'phone' |string | Be careful not to pass ints starting with 0, as they can be read as octal digits |
-| 'cod'	| int |	The amount in kyats to be collected from the end customer on your behalf |
-
-Optional:
-
-Param | Datatype | Description
---- | --- | ---
-'payment_method' | string | Defaults to 'Cash on Delivery'
-'description' | string | Description visible to the end customer if customer tracking is activated
-'latitude' | float | Coordinate of the destination
-'longitude' | float | Coordinate of the destination
-'region' | string | Defaults to 'ygn'. Options are ['ygn', 'mdy', 'npd', 'other']
