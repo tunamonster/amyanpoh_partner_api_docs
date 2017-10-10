@@ -35,6 +35,7 @@ Param | Datatype | Description
 'testing' | bool | Validates the input, but does not save it to the database if set to true.
 'payment_method' | string | Defaults to 'Cash on Delivery'
 'description' | string | Description visible to the end customer if customer tracking is activated
+'order_note' | string | Description visible to internal staff only
 'latitude' | float | Coordinate of the destination
 'longitude' | float | Coordinate of the destination
 'region' | string | Defaults to 'ygn'. Options are ['ygn', 'mdy', 'npd', 'other']
