@@ -38,7 +38,7 @@ Param | Datatype | Description
 'order_note' | string | Description visible to internal staff only
 'latitude' | float | Coordinate of the destination
 'longitude' | float | Coordinate of the destination
-'region' | string | Defaults to 'ygn'. Options are ['ygn', 'mdy', 'npd', 'other']
+'region' | string | Defaults to 'ygn'. Options are ['ygn', 'mdy', 'npw', 'other']
 
 ### Pricing
 Returns pricing for a given item based on the rates from the contract or SLA.
