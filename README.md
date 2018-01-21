@@ -77,4 +77,4 @@ Param | Datatype | Description
 | 'delivered' | string | If true, only shows delivered packages |
 | 'last' | int | Return the last n results. Max 400. |
 
-Example query: ` api.amyanpoh.com/v1/packages?start_date=1501029572&end_date=1501030747&last=6&delivered=true `
+Example query: `https://app.amyanpoh/com/api/get_packages?start_date=1501029572&end_date=1501030747&last=6&delivered=true`
